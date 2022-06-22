@@ -34,8 +34,8 @@ this is mobile view
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/thapa14/coloumn-preview-card)
+- Live Site URL: [live site](https://thriving-syrniki-8ba111.netlify.app/)
 
 ## My process
 i used mobile first workflow. i made the the webpage for mobile, then with media Queries i made it responsive for other devices.
