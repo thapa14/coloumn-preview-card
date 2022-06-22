@@ -1,0 +1,168 @@
+:root {
+    /* primary colors */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    /* neutral colors */
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+.cards {
+    width: 27.5rem;
+    padding: 3.6rem;
+}
+
+.cards span {
+    display: inline-block;
+    margin: 0 0 2rem 0;
+}
+
+.cards h1 {
+    color: var(--veryLightGray);
+    font-size: 3.6rem;
+    margin: 0 0 2rem 0;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.cards p {
+    color: var(--transparentWhite);
+    margin: 0 0 2rem 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.btn {
+    background-color: white;
+    padding: 1.2rem 2.5rem;
+    border: 2px solid white;
+    border-radius: 4rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+
+/* colors */
+#sedans {
+    background-color: var(--brightOrange);
+
+    border-radius: 1rem 1rem 0 0;
+}
+
+#suv {
+    background-color: var(--darkCyan);
+}
+
+#luxury {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0 1rem 1rem;
+
+}
+
+.sedanBtnColor {
+    color: var(--brightOrange);
+}
+
+.suvBtnColor {
+    color: var(--darkCyan);
+}
+
+.luxuryBtnColor {
+    color: var(--veryDarkCyan);
+}
+
+/* active status  */
+
+.sedanBtnColor:focus{
+    background-color: var(--brightOrange);
+    color: var(--transparentWhite);
+}
+.suvBtnColor:focus{
+    background-color: var(--darkCyan);
+    color: var(--transparentWhite);
+}
+.luxuryBtnColor:focus{
+    background-color: var(--veryDarkCyan);
+    color: var(--transparentWhite);
+}
+
+
+/* media queries */
+
+@media(min-width: 575px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        margin: 5rem 0;
+        border-radius: 1rem;
+    }
+    #luxury{
+        border-radius: 1rem;
+    }
+    #sedans{
+        border-radius: 1rem;
+    }
+}
+
+@media(min-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .cards {
+        margin: 0rem 0;
+        border-radius: 0rem;
+    }
+
+    .btn {
+        margin-top: 6rem;
+    }
+
+    #sedans {
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+
+    #luxury {
+        border-radius: 0rem 1rem 1rem 0rem;
+
+    }
+}
+
+@media (min-width:1000px){
+    .cards{
+        width: 27.5rem;
+    }
+}
